@@ -15,11 +15,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class BindingPage {
 
+  public valor1:number= 1;
+  public valor2:number = 2;
+  public nome:string ="Luiz";
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BindingPage');
   }
+
+  public somaDeDoisValores = () =>this.valor1+this.valor2;
 
 }
