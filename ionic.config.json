@@ -1,0 +1,7 @@
+{
+  "name": "exemploAula",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
