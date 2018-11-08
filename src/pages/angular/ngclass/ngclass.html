@@ -14,5 +14,8 @@
 
 
 <ion-content padding>
-
+   <button (click)="css='bold'">Bold</button>
+   <button (click)="css='font_red'">Red</button>
+   <button (click)="css='italic'">Italic</button>
+   <h2 [ngClass]="['font_red', 'bold']">Exemplo de NgClass</h2>
 </ion-content>

@@ -14,6 +14,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'ngif.html',
 })
 export class NgifPage {
+  public logado:boolean = false;
+  public status:boolean = false;
+  public nome: string = "Luiz";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

@@ -11,8 +11,22 @@
     </ion-navbar>
 
 </ion-header>
-
+  
 
 <ion-content padding>
-
+    <button ion-button (click)="logado = !logado">ALtera Usuario</button>
+    <div *ngIf="logado; else blocoelse">
+        Usuario Logado
+        <hr><br>
+        <ion-item>
+            <ion-label>Nome</ion-label>
+            <ion-input type="text" [(ngModel)]="nome"></ion-input>
+        </ion-item>
+        {{nome}}
+    </div>
+    <ng-template #blocoelse>
+        <div>Usuario nao esta logado</div>
+    </ng-template>
+    
+    
 </ion-content>

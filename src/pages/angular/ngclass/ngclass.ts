@@ -14,7 +14,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'ngclass.html',
 })
 export class NgclassPage {
-
+  public css : string = "";
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

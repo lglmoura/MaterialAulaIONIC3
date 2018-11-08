@@ -14,5 +14,16 @@
 
 
 <ion-content padding>
+   <button (click)="usuario = 'usuario'">Usuario</button>
+   <button (click)="usuario = 'admin'">Administrador</button>
+   <button (click)="usuario = 'visitante'">Visitante</button>
+   <button (click)="usuario = ''">Default</button>
 
+   <div [ngSwitch]="usuario">
+       <div *ngSwitchCase="'usuario'">Logado como Usuario</div>
+       <div *ngSwitchCase="'admin'">Logado como Adminstrado</div>
+       <div *ngSwitchCase="'visitante'">Logado como Visitante</div>
+       <div *ngSwitchDefault>Bem vindo ao site</div>
+
+   </div>
 </ion-content>

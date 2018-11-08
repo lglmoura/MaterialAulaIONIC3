@@ -14,5 +14,10 @@
 
 
 <ion-content padding>
-
+  <div *ngFor="let numero of numeros">{{numero}}</div>
+  <div *ngFor="let pessoa of pessoas, let i = index">
+        {{ i }} - {{pessoa.nome}} {{pessoa.idade}} {{pessoa.peso}}
+        <button (click)="clickAlet(i)">Excluir</button>
+        <div *ngFor="let nota of pessoa.notas" >{{nota}}</div>
+      </div>
 </ion-content>
