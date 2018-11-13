@@ -17,7 +17,7 @@
     <ion-list>
         <ion-item>
             <ion-label fixed>Básico </ion-label>
-            <ion-input [(ngModel)]="formI.nome"></ion-input>
+            <ion-input  [(ngModel)]= "formI.nome" ></ion-input>
         </ion-item>
         <ion-item>
             <ion-label floating>Floating</ion-label>
@@ -32,7 +32,7 @@
         </ion-item>
         <ion-item>
             <ion-label stacked>Teste Area</ion-label>
-            <ion-textarea rows="4"></ion-textarea>
+            <ion-textarea rows="4" [(ngModel)]="textoArea"></ion-textarea>
         </ion-item>
 
     </ion-list>
