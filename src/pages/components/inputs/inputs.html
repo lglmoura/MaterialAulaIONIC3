@@ -14,5 +14,27 @@
 
 
 <ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-label fixed>Básico </ion-label>
+            <ion-input [(ngModel)]="formI.nome"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Floating</ion-label>
+            <ion-input type="number" min="0" max="100" step="5"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label stacked>Stacked</ion-label>
+            <ion-input type="email" clearInput="true" ></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="email" placeholder="Email...." clearOnEdit="true"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label stacked>Teste Area</ion-label>
+            <ion-textarea rows="4"></ion-textarea>
+        </ion-item>
 
+    </ion-list>
+   
 </ion-content>

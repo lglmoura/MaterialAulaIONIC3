@@ -14,7 +14,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'inputs.html',
 })
 export class InputsPage {
-
+  public formI = {
+      nome: "",
+  };
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
