@@ -14,5 +14,57 @@
 
 
 <ion-content padding>
+    <!-- Lista básica-->
+    <ion-list>
+        <ion-item *ngFor="let i of [0,1,2,3]">Teste</ion-item>
+    </ion-list>
+    <br>
+    <!-- Sem linhas-->
+    <ion-list no-lines>
+        <ion-item *ngFor="let i of [0,1,2,3]">Teste</ion-item>
+    </ion-list>
+
+    <br>
+    <!-- margem Inset-->
+    <ion-list inset>
+        <ion-item *ngFor="let i of [0,1,2,3]">Teste</ion-item>
+    </ion-list>
+     <br>
+    <!--Cabeçalho-->
+    <ion-list >
+        <ion-list-header color="primary">Cabeçalho</ion-list-header>
+        <ion-item *ngFor="let i of [0,1,2,3]">
+            <ion-icon name="trash" color="danger" item-start></ion-icon>   
+            Teste
+        </ion-item>
+    </ion-list>
+
+    <br>
+    <!--Cabeçalho-->
+    <ion-list>
+        <ion-list-header color="primary">Sliding</ion-list-header>
+        <ion-item-sliding *ngFor="let i of [0,1,2,3]">
+            <ion-item >
+                 Teste
+            </ion-item>
+            <ion-item-options side="left">
+                <button ion-button color ="danger">
+                    <ion-icon name="trash"></ion-icon>
+                    Excluir
+                </button>
+            </ion-item-options>
+            <ion-item-options side="right">
+                <button ion-button color="light">
+                    <ion-icon name="more"></ion-icon>
+                    opções
+                </button>
+            </ion-item-options>
+        </ion-item-sliding>
+        
+    </ion-list>
+
+
+
+
 
 </ion-content>
