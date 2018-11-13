@@ -22,4 +22,8 @@ export class ButtonsPage {
     console.log('ionViewDidLoad ButtonsPage');
   }
 
+  entraPagina = () =>{
+    console.log("Click botao");
+  }
+
 }
