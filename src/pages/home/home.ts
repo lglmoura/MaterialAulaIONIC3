@@ -60,6 +60,7 @@ export class HomePage {
      */
   public apis: Array<{ titulo: string; pagina: any }> = [
     { titulo: "NavControler", pagina: "NavControlerPage" },
+    { titulo: "Life Cycle", pagina: "LifecyclePage" },
    
   ];
 
