@@ -54,10 +54,20 @@ export class HomePage {
     { titulo: "Virtual Scroll", pagina: "VirtualScrollPage" }
   ];
 
+
+  /**
+     * Array de objetos contendo todas as páginas da lista de plugins.
+     */
+  public apis: Array<{ titulo: string; pagina: any }> = [
+    { titulo: "NavControler", pagina: "NavControlerPage" },
+   
+  ];
+
+
   /**
    * Array de objetos contendo todas as páginas da lista de plugins.
    */
-  public apis: Array<{ titulo: string; pagina: any }> = [
+  public pipesecia: Array<{ titulo: string; pagina: any }> = [
     { titulo: "Pipes", pagina: "PipesPage" },
     { titulo: "Directives", pagina: "DirectivesPage" },
     { titulo: "Providers", pagina: "ProvidersPage" },
