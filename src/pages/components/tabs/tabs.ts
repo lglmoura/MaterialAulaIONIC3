@@ -14,12 +14,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'tabs.html',
 })
 export class TabsPage {
+  
+  public tabs : Array<{icone: string, nome: string, componente: string}> = [
+     { 
+       icone: 'alarm', nome:'Despertador', componente:'FormPage'
+     },
+    {
+      icone: 'apps', nome: 'Aplicativos', componente: 'ButtonsPage'
+    },
+    {
+      icone: 'bookmarks', nome: 'Salvos', componente: 'ListsPage'
+    }
+  ]
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TabsPage');
+    console.log('ionViewDidLoad TabsPage  aa');
   }
 
 }
